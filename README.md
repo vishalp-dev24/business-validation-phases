@@ -29,6 +29,21 @@ Here's the thing about validation: it should hurt a little. If you're not discov
 
 ---
 
+## ⚠️ Critical Warnings Before Use
+
+Read **before** using this framework:
+
+### Health/Medical Ideas
+**DANGEROUS for health tech.** This skill treats medical devices like photo apps. It measures interest, not clinical outcomes. See [Health Tech Warning](./SKILL.md#health-tech--medical-devices).
+
+### Hardware/Physical Products
+**Framework assumes software.** MVP decision tree has no hardware branch. Use enhanced version: [`templates/mvp-decision-matrix-V2.md`](./templates/mvp-decision-matrix-V2.md).
+
+### Multi-Sided Marketplaces  
+**Templates assume single-sided products.** Multi-sided complexity ignored. Interview counts, liquidity testing all broken for marketplaces. See warnings in SKILL.md.
+
+---
+
 ## Quick Start
 
 ### For Founders
@@ -46,6 +61,10 @@ If you are using Codex, Hermes, Claude Code, or similar, grab the context engine
 - **Tree-of-Thoughts (ToT)** - When you want multiple perspectives
 - **ReAct** - For research-heavy dynamic validation
 
+### For Regulated Industries
+
+Use enhanced MVP matrix: [`templates/mvp-decision-matrix-V2.md`](./templates/mvp-decision-matrix-V2.md) with hardware, health tech, and marketplace branches.
+
 ---
 
 ## What Is Inside
@@ -54,10 +73,21 @@ If you are using Codex, Hermes, Claude Code, or similar, grab the context engine
 business-validation-phases/
 ├── SKILL.md                              # The full framework
 ├── README.md                             # This file
+├── stress-tests/                         # Stress test data (see Tested section)
+│   ├── STRESS_TEST_SUMMARY.md            # All findings
+│   ├── batch1-test2-storygrandma.md      # Marketplace validation test
+│   ├── batch1-test3-beverage-chiller.md  # Hardware validation test
+│   ├── batch1-test4-carbon-consultants.md # B2B marketplace test
+│   ├── batch1-test5-receipt-recipes.md   # Consumer app test
+│   ├── batch1-test6-construction-safety.md # B2B AI test
+│   ├── batch1-test7-anxiety-predictor.md # Health AI - CRITICAL FINDINGS
+│   ├── batch1-test8-cannabis-saas.md     # Regulated SaaS test
+│   └── batch1-test9-sneaker-auth.md      # 3-sided marketplace test
 └── templates/
     ├── pretotyping-checklist.md          # Phase 1
     ├── customer-discovery-guide.md       # Phase 2
-    ├── mvp-decision-matrix.md            # Phase 3
+    ├── mvp-decision-matrix.md            # Phase 3 (software focus)
+    ├── mvp-decision-matrix-V2.md         # Phase 3 (enhanced w/ hardware/regulated)
     ├── pmf-measurement.md                # Phase 4
     ├── scale-validation.md               # Phase 5
     ├── expansion-network-effects.md      # Phase 6
@@ -184,6 +214,32 @@ Read `templates/context-engineering-prompts.md`. Use CoT for deep dives on singl
 - [The Mom Test](http://momtestbook.com/) by Rob Fitzpatrick - read this if you read nothing else
 - [NFX Network Effects Bible](https://www.nfx.com/post/network-effects-bible/)
 - [First Round Review](https://review.firstround.com/)
+
+---
+
+## Tested & Refined (May 2026)
+
+This framework has been through **8 parallel stress tests** with different business types:
+
+| Test | Business Type | Result | Rating |
+|------|--------------|--------|--------|
+| AI dog walker app | Consumer AI | PASS | 7/10 |
+| Bedtime storytelling | 2-sided marketplace | PASS | 7/10 |
+| Beverage chiller | Hardware | PASS | 7.6/10 |
+| Carbon consultants | B2B marketplace | PASS | 9.2/10 |
+| Receipt recipes | Consumer app | PASS | 7.4/10 |
+| Construction safety | B2B AI | PASS | 8/10 |
+| Anxiety predictor | Health AI | **CRITICAL** | DANGEROUS |
+| Cannabis inventory | Regulated SaaS | PASS | B/10 |
+| Sneaker auth | 3-sided marketplace | PASS | 7.2/10 |
+
+See [`stress-tests/STRESS_TEST_SUMMARY.md`](./stress-tests/STRESS_TEST_SUMMARY.md) for detailed findings.
+
+### What We Fixed
+- Added health/medical warning section
+- Created enhanced MVP matrix with hardware branch  
+- Added multi-sided marketplace guidance
+- Identified customer sourcing gaps
 
 ---
 
