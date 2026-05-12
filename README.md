@@ -10,22 +10,22 @@ A comprehensive, phase-based framework for validating business ideas from concep
 
 ## What This Is
 
-This framework helps you **avoid building things nobody wants** by providing structured validation checklists and decision criteria for every stage of your startup journey.
+I keep seeing founders spend months building products nobody ends up wanting. This framework exists to stop that. It gives you structured checklists and actual decision criteria for every stage of your startup journey.
 
-> *"Validation must be uncomfortable. If your tests aren't revealing hard truths, you're measuring vanity metrics."*
+Here's the thing about validation: it should hurt a little. If you're not discovering uncomfortable truths about your idea, you're measuring vanity metrics.
 
 ---
 
 ## Framework by Phase
 
-| Phase | Focus | Primary Framework | Go Threshold |
-|-------|-------|-------------------|--------------|
-| **1 - Idea/Concept** | Validate interest before building | Pretotyping + Effectuation | >10% ILI |
-| **2 - Problem** | Confirm the problem is real and painful | Customer Development + JTBD | 60%+ urgency |
-| **3 - Solution** | Test solutions without building | Concierge/Wizard of Oz MVP | 40%+ willing to pay |
-| **4 - PMF** | Measure product-market fit | Sean Ellis 40% Test | 40%+ "very disappointed" |
-| **5 - Scale** | Validate unit economics | Bessemer's 10 Laws | LTV/CAC > 3 |
-| **6 - Expansion** | Build defensible moats | NFX Network Effects | NRR > 100% |
+| Phase | What You Are Doing | Framework to Use | Go Threshold |
+|-------|-------------------|------------------|--------------|
+| **1 - Idea/Concept** | Testing interest before you build anything | Pretotyping + Effectuation | >10% ILI |
+| **2 - Problem** | Confirming the problem actually exists and hurts | Customer Development + JTBD | 60%+ urgency |
+| **3 - Solution** | Testing solutions without building them | Concierge/Wizard of Oz MVP | 40%+ willing to pay |
+| **4 - PMF** | Measuring product-market fit properly | Sean Ellis 40% Test | 40%+ "very disappointed" |
+| **5 - Scale** | Validating unit economics work | Bessemer's 10 Laws | LTV/CAC > 3 |
+| **6 - Expansion** | Building moats that last | NFX Network Effects | NRR > 100% |
 
 ---
 
@@ -33,71 +33,73 @@ This framework helps you **avoid building things nobody wants** by providing str
 
 ### For Founders
 
-1. **Identify your current phase** using the table above
-2. **Open the phase-specific template** from `/templates`
-3. **Work through the checklist** - be honest about evidence
-4. **Make the Go/No-Go decision** with confidence
+1. Figure out which phase you are actually in (be honest)
+2. Open the matching template in `/templates`
+3. Work through the checklist - actually do the work, do not skip steps
+4. Make the Go/No-Go decision with real evidence
 
-### For AI Tools (Codex, Hermes, Claude Code)
+### For AI Tools
 
-Use the context engineering prompts in [`templates/context-engineering-prompts.md`](./templates/context-engineering-prompts.md):
+If you are using Codex, Hermes, Claude Code, or similar, grab the context engineering prompts in [`templates/context-engineering-prompts.md`](./templates/context-engineering-prompts.md):
 
-- **Chain-of-Thought (CoT)** - Step-by-step structured reasoning
-- **Tree-of-Thoughts (ToT)** - Multi-expert panel evaluation
-- **ReAct** - Dynamic reasoning with tool use
+- **Chain-of-Thought (CoT)** - For methodical step-by-step validation
+- **Tree-of-Thoughts (ToT)** - When you want multiple perspectives
+- **ReAct** - For research-heavy dynamic validation
 
 ---
 
-## Repository Structure
+## What Is Inside
 
 ```
 business-validation-phases/
-├── SKILL.md                              # Complete framework documentation
-├── README.md                             # You are here
+├── SKILL.md                              # The full framework
+├── README.md                             # This file
 └── templates/
-    ├── pretotyping-checklist.md          # Phase 1: Idea validation
-    ├── customer-discovery-guide.md       # Phase 2: Problem interviews
-    ├── mvp-decision-matrix.md            # Phase 3: Solution testing
-    ├── pmf-measurement.md                # Phase 4: PMF validation
-    ├── scale-validation.md               # Phase 5: Unit economics
-    ├── expansion-network-effects.md      # Phase 6: Moats & growth
-    └── context-engineering-prompts.md    # AI validation patterns
+    ├── pretotyping-checklist.md          # Phase 1
+    ├── customer-discovery-guide.md       # Phase 2
+    ├── mvp-decision-matrix.md            # Phase 3
+    ├── pmf-measurement.md                # Phase 4
+    ├── scale-validation.md               # Phase 5
+    ├── expansion-network-effects.md      # Phase 6
+    └── context-engineering-prompts.md    # AI tooling
 ```
 
 ---
 
-## Frameworks Integrated
+## Where This Comes From
+
+I did not invent these frameworks. I assembled them from people who have actually done this stuff:
 
 ### Traditional/Academic
-- **Lean Startup** (Eric Ries) - Build-Measure-Learn feedback loops
-- **Customer Development** (Steve Blank) - 4-step validation methodology
-- **Jobs-to-be-Done** (Clay Christensen) - "People hire products to get jobs done"
-- **Design Thinking** (Stanford d.school) - 5-stage human-centered design
-- **Effectuation** (Saras Sarasvathy) - Expert entrepreneur decision logic
+- **Lean Startup** (Eric Ries) - Build-Measure-Learn loops
+- **Customer Development** (Steve Blank) - 4-step validation
+- **Jobs-to-be-Done** (Clay Christensen) - The "hiring products" frame
+- **Design Thinking** (Stanford d.school) - Human-centered design
+- **Effectuation** (Saras Sarasvathy) - Expert entrepreneur logic
 
-### VC/Accelerator Frameworks
-- **YC Philosophy** - "Make Something People Want"
+### VC/Accelerator
+- **YC** - "Make Something People Want" (simple but hard)
 - **Sequoia Capital** - 4 Terrifying Questions
-- **First Round Capital** - The PMF Method (4 levels)
-- **Bessemer 10 Laws** - Cloud metrics & 5 C's
-- **a16z** - Marketplace 13 Metrics
-- **NFX** - 16 Types of Network Effects
+- **First Round Capital** - 4-level PMF framework
+- **Bessemer 10 Laws** - Cloud metrics that actually matter
+- **a16z** - 13 metrics for marketplaces
+- **NFX** - 16 types of network effects
 
 ### Validation Methods
-- **Pretotyping** (Alberto Savoia) - Fake door, video MVPs, ILI metrics
-- **MVP Types** - Concierge, Wizard of Oz, Mechanical Turk, Pinocchio
-- **Sean Ellis Test** - 40% "very disappointed" threshold
-- **AARRR Metrics** (Dave McClure) - Pirate metrics
+- **Pretotyping** (Alberto Savoia) - Fake doors, videos, ILI
+- **MVP Types** - Concierge, Wizard of Oz, Mechanical Turk
+- **Sean Ellis Test** - The 40% rule
+- **AARRR** (Dave McClure) - Pirate metrics
 
 ---
 
-## Key Principles
+## Principles That Matter
 
-1. **Kill ideas fast** if validation fails. Do not fall in love with solutions.
-2. **Demand evidence.** Opinions and "interesting" responses do not count.
-3. **Founder-problem fit matters.** Founders need authentic insight into the pain.
-4. **Niche down aggressively.** The narrow wedge always beats broad markets.
-5. **Think 10 years.** Will this be enduring? Will you still care?
+1. **Kill ideas fast.** If validation fails, move on. Do not get attached.
+2. **Demand evidence.** "Interesting" is not evidence. Concrete stories are.
+3. **Founder-problem fit.** You need authentic insight into the pain.
+4. **Niche aggressively.** The narrow wedge beats the broad market.
+5. **Think 10 years.** Will you still care? Will it still matter?
 
 ---
 
@@ -105,18 +107,20 @@ business-validation-phases/
 
 ### Phase 2: Problem Validation
 
+From `templates/customer-discovery-guide.md`:
+
 ```markdown
-# Customer Interview Script (from templates/customer-discovery-guide.md)
+# Customer Interview Script
 
 ## Question 1: Tell me about the last time you [experienced problem]
 - Look for: Concrete stories, not opinions
-- Red flag: "That sounds interesting" (polite, not urgent)
+- Red flag: "That sounds interesting" - polite, not urgent
 - Green flag: "This happens all the time"
 
 ## Question 2: What do you currently do to solve this?
-- Look for: Manual workarounds, spreadsheets, expensive solutions
+- Look for: Manual workarounds, spreadsheets, paid solutions
 - Red flag: "Nothing really"
-- Green flag: Spending money/time to work around
+- Green flag: They spend money or time working around it
 
 Minimum: 40 problem interviews
 Target: 60%+ confirm urgent problem
@@ -124,8 +128,10 @@ Target: 60%+ confirm urgent problem
 
 ### Phase 4: PMF Measurement
 
+From `templates/pmf-measurement.md`:
+
 ```markdown
-# Sean Ellis 40% Test (from templates/pmf-measurement.md)
+# Sean Ellis 40% Test
 
 Ask: "How would you feel if you could no longer use [product]?"
 
@@ -139,8 +145,10 @@ Follow-up: "What is the main reason?"
 
 ### Phase 5: Unit Economics
 
+From `templates/scale-validation.md`:
+
 ```markdown
-# CAC Payback (from templates/scale-validation.md)
+# CAC Payback
 
 LTV = (ARPU × Gross Margin) / Churn
 CAC = Sales & Marketing Spend / New Customers
@@ -153,68 +161,55 @@ CAC = Sales & Marketing Spend / New Customers
 
 ---
 
-## Learning Path
+## How to Use This
 
 ### First-Time Founder
-1. Start with **Phase 1** - Read `templates/pretotyping-checklist.md`
-2. Complete Bird-in-Hand worksheet
-3. Run first Fake Door test (48 hours)
-4. Move to Phase 2 based on results
+
+Start with Phase 1. Read `templates/pretotyping-checklist.md`. Do the Bird-in-Hand worksheet. Run a Fake Door test this week (seriously, 48 hours). Move to Phase 2 if you get >10% ILI.
 
 ### Experienced Founder
-1. Jump to your current phase
-2. Fill the template gaps
-3. Identify your strongest Go signals
-4. Focus on weakest validation area
+
+Skip to wherever you are right now. Fill in the template gaps honestly. Identify your strongest Go signals and your weakest validation area. Fix the weak spot.
 
 ### AI-Assisted Validation
-1. Read `templates/context-engineering-prompts.md`
-2. Use CoT patterns for single-idea deep dives
-3. Use ToT for panel-style evaluation
-4. Use ReAct for dynamic research
+
+Read `templates/context-engineering-prompts.md`. Use CoT for deep dives on single ideas. Use ToT when you want panel-style evaluation. Use ReAct for research-heavy validation.
 
 ---
 
-## Related Resources
+## Related Reading
 
 - [Y Combinator Startup Library](https://www.ycombinator.com/library)
 - [The Lean Startup](https://theleanstartup.com/) by Eric Ries
-- [The Mom Test](http://momtestbook.com/) by Rob Fitzpatrick
-- [NFX Network Effects](https://www.nfx.com/post/network-effects-bible/) Bible
+- [The Mom Test](http://momtestbook.com/) by Rob Fitzpatrick - read this if you read nothing else
+- [NFX Network Effects Bible](https://www.nfx.com/post/network-effects-bible/)
 - [First Round Review](https://review.firstround.com/)
 
 ---
 
 ## Contributing
 
-This framework synthesizes 25+ years of startup research. If you have:
-- New validation case studies
+This pulls together 25+ years of startup research. If you have:
+- Real validation case studies with results
 - Framework improvements
 - Phase-specific tools
-- Context engineering patterns
+- Better context engineering patterns
 
-Open an issue or PR with evidence-backed additions.
+Open an issue or PR. Back it with evidence.
 
 ---
 
 ## License
 
-MIT License - See [LICENSE](./LICENSE) for details.
+MIT License - see [LICENSE](./LICENSE).
 
 ---
 
 ## Acknowledgments
 
-Frameworks synthesized from:
-- **Eric Ries** (Lean Startup)
-- **Steve Blank** (Customer Development)
-- **Clayton Christensen** (Jobs-to-be-Done)
-- **Sarasarasvathy** (Effectuation)
-- **Sequoia Capital** (Arc Program)
-- **First Round Capital** (PMF Method)
-- **Bessemer Venture Partners** (10 Laws)
-- **Andreessen Horowitz** (Marketplace Metrics)
-- **NFX** (Network Effects Masterclass)
+Frameworks from:
+- Eric Ries, Steve Blank, Clayton Christensen, Saras Sarasvathy
+- Sequoia Capital, First Round Capital, Bessemer, a16z, NFX
 
 ---
 
