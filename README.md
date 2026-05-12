@@ -8,7 +8,7 @@ A comprehensive, phase-based framework for validating business ideas from concep
 
 ---
 
-## 🎯 What This Is
+## What This Is
 
 This framework helps you **avoid building things nobody wants** by providing structured validation checklists and decision criteria for every stage of your startup journey.
 
@@ -16,7 +16,7 @@ This framework helps you **avoid building things nobody wants** by providing str
 
 ---
 
-## 📊 Framework by Phase
+## Framework by Phase
 
 | Phase | Focus | Primary Framework | Go Threshold |
 |-------|-------|-------------------|--------------|
@@ -29,7 +29,7 @@ This framework helps you **avoid building things nobody wants** by providing str
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### For Founders
 
@@ -48,7 +48,7 @@ Use the context engineering prompts in [`templates/context-engineering-prompts.m
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 business-validation-phases/
@@ -66,7 +66,7 @@ business-validation-phases/
 
 ---
 
-## 🧠 Frameworks Integrated
+## Frameworks Integrated
 
 ### Traditional/Academic
 - **Lean Startup** (Eric Ries) - Build-Measure-Learn feedback loops
@@ -91,17 +91,17 @@ business-validation-phases/
 
 ---
 
-## 💡 Key Principles
+## Key Principles
 
-1. **Kill ideas fast** if validation fails. Don't fall in love with solutions.
-2. **Demand evidence.** Opinions and "interesting" responses don't count.
+1. **Kill ideas fast** if validation fails. Do not fall in love with solutions.
+2. **Demand evidence.** Opinions and "interesting" responses do not count.
 3. **Founder-problem fit matters.** Founders need authentic insight into the pain.
 4. **Niche down aggressively.** The narrow wedge always beats broad markets.
 5. **Think 10 years.** Will this be enduring? Will you still care?
 
 ---
 
-## 🛠 Usage Examples
+## Usage Examples
 
 ### Phase 2: Problem Validation
 
@@ -109,14 +109,14 @@ business-validation-phases/
 # Customer Interview Script (from templates/customer-discovery-guide.md)
 
 ## Question 1: Tell me about the last time you [experienced problem]
-→ Look for: Concrete stories, not opinions
-→ Red flag: "That sounds interesting" (polite, not urgent)
-→ Green flag: "This happens all the time"
+- Look for: Concrete stories, not opinions
+- Red flag: "That sounds interesting" (polite, not urgent)
+- Green flag: "This happens all the time"
 
 ## Question 2: What do you currently do to solve this?
-→ Look for: Manual workarounds, spreadsheets, expensive solutions
-→ Red flag: "Nothing really"
-→ Green flag: Spending money/time to work around
+- Look for: Manual workarounds, spreadsheets, expensive solutions
+- Red flag: "Nothing really"
+- Green flag: Spending money/time to work around
 
 Minimum: 40 problem interviews
 Target: 60%+ confirm urgent problem
@@ -129,12 +129,12 @@ Target: 60%+ confirm urgent problem
 
 Ask: "How would you feel if you could no longer use [product]?"
 
-□ Very disappointed: ___% (Target: >40%)
-□ Somewhat disappointed: ___%
-□ Not disappointed: ___%
+- Very disappointed: ___% (Target: >40%)
+- Somewhat disappointed: ___%
+- Not disappointed: ___%
 
-□ Follow-up: "What's the main reason?"
-→ Capture themes: Saves time / Better than X / Essential for workflow
+Follow-up: "What is the main reason?"
+- Capture themes: Saves time / Better than X / Essential for workflow
 ```
 
 ### Phase 5: Unit Economics
@@ -145,15 +145,15 @@ Ask: "How would you feel if you could no longer use [product]?"
 LTV = (ARPU × Gross Margin) / Churn
 CAC = Sales & Marketing Spend / New Customers
 
-□ LTV: $_____
-□ CAC: $_____
-□ LTV/CAC ratio: _____ (Target: >3)
-□ Payback period: _____ months (Target: <12)
+- LTV: $_____
+- CAC: $_____
+- LTV/CAC ratio: _____ (Target: >3)
+- Payback period: _____ months (Target: <12)
 ```
 
 ---
 
-## 🎓 Learning Path
+## Learning Path
 
 ### First-Time Founder
 1. Start with **Phase 1** - Read `templates/pretotyping-checklist.md`
@@ -175,7 +175,7 @@ CAC = Sales & Marketing Spend / New Customers
 
 ---
 
-## 🔗 Related Resources
+## Related Resources
 
 - [Y Combinator Startup Library](https://www.ycombinator.com/library)
 - [The Lean Startup](https://theleanstartup.com/) by Eric Ries
@@ -185,7 +185,7 @@ CAC = Sales & Marketing Spend / New Customers
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 This framework synthesizes 25+ years of startup research. If you have:
 - New validation case studies
@@ -197,19 +197,19 @@ Open an issue or PR with evidence-backed additions.
 
 ---
 
-## 📜 License
+## License
 
 MIT License - See [LICENSE](./LICENSE) for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 Frameworks synthesized from:
 - **Eric Ries** (Lean Startup)
 - **Steve Blank** (Customer Development)
 - **Clayton Christensen** (Jobs-to-be-Done)
-- **Saras Sarasvathy** (Effectuation)
+- **Sarasarasvathy** (Effectuation)
 - **Sequoia Capital** (Arc Program)
 - **First Round Capital** (PMF Method)
 - **Bessemer Venture Partners** (10 Laws)
@@ -223,5 +223,5 @@ Frameworks synthesized from:
 </p>
 
 <p align="center">
-  ⭐ Star this repo if it helps your startup journey
+  Star this repo if it helps your startup journey
 </p>
