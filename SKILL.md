@@ -1,11 +1,17 @@
 ---
 name: business-validation-phases
-version: 1.0.0
+version: 1.1.0
 description: |
   Comprehensive business validation framework mapped to business lifecycle phases.
   Integrates YC, Lean Startup, Design Thinking, JTBD, Business Model Canvas, 
   Effectuation, and VC frameworks (Sequoia, First Round, a16z, Bessemer, NFX).
   Uses context engineering and systematic reasoning for structured validation.
+  
+  
+  ⚠️ CRITICAL WARNINGS: See "DOMAIN-SPECIFIC WARNINGS" section
+  - Health/Medical: DANGEROUS without clinical validation (see detailed warnings)
+  - Hardware: Use templates/mvp-decision-matrix-V2.md (enhanced branch added)
+  - Multi-sided Marketplaces: Multiplied complexity - see marketplace warnings
 
 triggers:
   - "business validation framework"
@@ -354,6 +360,98 @@ Action 2: Search[TAM + market size + industry report]
 
 ---
 
+## ⚠️ DOMAIN-SPECIFIC WARNINGS
+
+### Health Tech / Medical Devices
+**CRITICAL:** This framework CANNOT adequately validate regulated health products without major adaptations.
+
+**What This Skill Cannot Do:**
+- Validate FDA/regulatory compliance requirements
+- Assess clinical evidence needs (RCTs, pilot studies)
+- Evaluate HIPAA compliance gaps
+- Replace medical advisor consultation
+- Determine device classification (Class I/II/III)
+
+**If Your Idea Involves:**
+- Medical diagnosis or prediction
+- Health monitoring (heart rate, sleep, anxiety, etc.)
+- Treatment recommendations
+- FDA-regulated claims
+
+**You MUST:**
+1. Consult a medical advisor/clinical expert
+2. Determine FDA pathway (510(k), De Novo, PMA)
+3. Design clinical validation studies (not MVPs)
+4. Assess patient safety risks
+5. Review HIPAA compliance
+6. Consider two-sided market (patient + clinician + payer)
+
+**Why Standard Validation Fails:**
+- Pretotyping tests measure interest, not clinical efficacy
+- Wizard of Oz cannot simulate ML medical predictions
+- PMF metrics unavailable pre-FDA clearance
+- Retention benchmarks don't apply (recovery = good churn)
+
+**See:** `references/stress-test-batch1-test7-anxiety-predictor.md` for detailed analysis
+
+---
+
+### AI/ML Products Where Core Value Is Inference
+**WARNING:** Standard MVPs (Wizard of Oz, Concierge) may not apply.
+
+**When You CAN Use Standard MVPs:**
+- AI assists humans (not replaces them)
+- Humans can plausibly simulate AI output
+- Value is in workflow, not accuracy
+
+**When You CANNOT:**
+- Core value IS accurate prediction/anomaly detection
+- Humans cannot achieve similar performance
+- Medical, financial, or safety-critical predictions
+
+**Alternative Validation:**
+- Academic paper proof-of-concept
+- Benchmark dataset evaluation
+- Limited pilot with human oversight
+- Alpha testing with high tolerance users
+
+---
+
+### Two-Sided Marketplaces & Multi-Sided Platforms
+**WARNING:** This framework requires significant adaptation for marketplace/platform businesses. Standard templates assume single-sided products.
+
+**What Breaks for Marketplaces:**
+- MVP Decision Matrix assumes single value proposition (marketplaces have 2+ sides)
+- Interview count guidance (40 interviews) must be multiplied by number of sides
+- Unit economics are multi-sided (subsidize one side, monetize the other)
+- Chicken-and-egg problem: which side to build first?
+- Liquidity testing required before PMF measurement
+
+**Additional Validation Required:**
+1. **Multi-sided JTBD Analysis** - Separate JTBD for each side (suppliers, buyers, etc.)
+2. **Liquidity Testing** - Can you match supply/demand? Paper marketplace test
+3. **Side-Sequencing Strategy** - Supply-first vs demand-first decision
+4. **Fake Liquidity** - How to simulate network effects pre-launch
+5. **Cross-side Network Effects** - Does more supply attract more demand?
+
+**Marketplace-Specific MVP Approaches:**
+- **Paper Marketplace:** Manual matching via Instagram/WhatsApp/Email before building platform
+- **Geographic Constraint:** Start in one city to concentrate liquidity
+- **Vertical Slice:** One category first, expand later (e.g., just sneakers, not all collectibles)
+- **Service Wrapper:** Concierge service that manually coordinates both sides
+
+**Modified Metrics for Marketplaces:**
+- **Interview Load:** 20-30 interviews PER SIDE (not 40 total)
+- **Liquidity Threshold:** Can you make 10 transactions in 30 days manually?
+- **Match Rate:** % of requests successfully fulfilled
+- **Time to Match:** How quickly can you connect supply/demand?
+- **Multi-tenanting:** Are users exclusively on your platform?
+
+**See:** `references/stress-test-batch1-test9-sneaker-auth.md` for detailed marketplace validation analysis  
+**Template:** Use `templates/marketplace-validation.md` for marketplace-specific validation workflow
+
+---
+
 ## Framework Selection Quick Reference
 
 | Situation | Recommended Framework |
@@ -366,8 +464,9 @@ Action 2: Search[TAM + market size + industry report]
 | Building defensible moats | NFX Network Effects + a16z Marketplace |
 | Raising Series A | Sequoia 4 Terrifying Questions |
 | Enterprise B2B | Steve Blank Customer Development |
-| Marketplace/Platform | a16z 13 Metrics + NFX |
+| Marketplace/Platform | **templates/marketplace-validation.md** + a16z Metrics |
 | AI/ML Product | Data Network Effects + Lean Startup |
+| Health Tech / Medical | **SEE WARNINGS ABOVE** |
 
 ---
 
@@ -460,6 +559,7 @@ Action 2: Search[TAM + market size + industry report]
 
 ---
 
-*Skill created based on comprehensive research using parallel subagent tracks*
-*Frameworks synthesized from 25+ primary sources and 100+ case studies*
-*Context engineering patterns adapted from ReAct, CoT, and ToT research*
+*Skill created based on comprehensive research using parallel subagent tracks*  
+*Frameworks synthesized from 25+ primary sources and 100+ case studies*  
+*Context engineering patterns adapted from ReAct, CoT, and ToT research*  
+*Stress tested and refined May 2025 - see `references/stress-test-methodology.md` for methodology*
